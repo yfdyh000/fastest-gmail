@@ -45,7 +45,7 @@ config.badge = {
 
 config.popup = {
   get width () {
-    return +app.storage.read('width') || 500;
+    return +app.storage.read('width') || 800;
   },
   set width (val) {
     val = +val;
@@ -53,7 +53,7 @@ config.popup = {
     app.storage.write('width', val);
   },
   get height () {
-    return +app.storage.read('height') || 480;
+    return +app.storage.read('height') || 580;
   },
   set height (val) {
     val = +val;
